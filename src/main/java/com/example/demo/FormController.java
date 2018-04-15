@@ -19,4 +19,10 @@ public class FormController {
     public Nip checkNip(@RequestParam("nip") String nip) {
         return new Nip(nip);
     }
+
+    @RequestMapping("/checkPesel")
+    @ResponseBody
+    public Pesel checkPesel(@RequestParam("pesel") String pesel) {
+        return new Pesel(pesel);
+    }
 }
