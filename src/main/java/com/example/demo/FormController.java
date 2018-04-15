@@ -25,4 +25,10 @@ public class FormController {
     public Pesel checkPesel(@RequestParam("pesel") String pesel) {
         return new Pesel(pesel);
     }
+
+    @RequestMapping("/checkRegon")
+    @ResponseBody
+    public Regon checkRegon(@RequestParam("regon") String regon) {
+        return new Regon(regon);
+    }
 }
