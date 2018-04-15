@@ -13,4 +13,10 @@ public class FormController {
     public Mail checkMail(@RequestParam("mail") String mail) {
         return new Mail(mail);
     }
+
+    @RequestMapping("/checkNip")
+    @ResponseBody
+    public Nip checkNip(@RequestParam("nip") String nip) {
+        return new Nip(nip);
+    }
 }
