@@ -31,4 +31,10 @@ public class FormController {
     public Regon checkRegon(@RequestParam("regon") String regon) {
         return new Regon(regon);
     }
+
+    @RequestMapping("/checkCode")
+    @ResponseBody
+    public PostCode checkCode(@RequestParam("code") String code) {
+        return new PostCode(code);
+    }
 }
